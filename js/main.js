@@ -123,29 +123,50 @@
 // console.log("Второе число:", second);
 // console.log("Остальные числа:", rest);
 
-console.log("Практическое задание");
+// console.log("Практическое задание");
 
-const numbers1 = [10, 20, 30];
-const numbers2 = [40, 50, 60];
+// const numbers1 = [10, 20, 30];
+// const numbers2 = [40, 50, 60];
 
-const merged = [...numbers1, ...numbers2];
-console.log("Объединённый массив:", merged);
+// const merged = [...numbers1, ...numbers2];
+// console.log("Объединённый массив:", merged);
 
-function findMax(...numbers) {
-    return Math.max(...numbers);
-}
-console.log("Максимум из 5, 12, 8, 23, 15:", findMax(5, 12, 8, 23, 15));
-console.log("Максимум из 100, 45, 78:", findMax(100, 45, 78));
+// function findMax(...numbers) {
+//     return Math.max(...numbers);
+// }
+// console.log("Максимум из 5, 12, 8, 23, 15:", findMax(5, 12, 8, 23, 15));
+// console.log("Максимум из 100, 45, 78:", findMax(100, 45, 78));
 
-const obj1 = {
-    brand: "Apple",
-    model: "iPhone 14"
-};
+// const obj1 = {
+//     brand: "Apple",
+//     model: "iPhone 14"
+// };
 
-const obj2 = {
-    price: 80000,
-    inStock: true
-};
+// const obj2 = {
+//     price: 80000,
+//     inStock: true
+// };
 
-const mergedObj = { ...obj1, ...obj2 };
-console.log("Объединённый объект:", mergedObj);
+// const mergedObj = { ...obj1, ...obj2 };
+// console.log("Объединённый объект:", mergedObj);
+
+// import { greet, add, PI } from "./utils.js";
+
+// console.log("Модули");
+// console.log(greet("Алексей"));
+// console.log("5 + 3 =", add(5, 3));
+// console.log("Значение PI:", PI);
+
+// import { multiply as умножить } from "./utils.js";
+// console.log("4 * 7 =", умножить(4, 7));
+
+// import * as Utils from "./utils.js";
+// console.log(Utils.greet("Мария"));
+// console.log("Умножение:", Utils.multiply(3, 9));
+
+import { square, cube, E } from "./math.js";
+
+console.log("\n=== Практическое задание (модули) ===");
+console.log("Квадрат числа 5:", square(5));
+console.log("Куб числа 3:", cube(3));
+console.log("Число E:", E);
